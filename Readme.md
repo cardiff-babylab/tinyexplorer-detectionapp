@@ -92,4 +92,4 @@ We look forward to seeing how this toolbox can support and advance your research
 
 ## Funding
 
-This work was supported by a James S. McDonnell Foundation (JSMF) Opportunity Award (https://doi.org/10.37717/2022-3711) and a UKRI Future Leaders Fellowship (MR/X032922/1) awarded to HD.
+This work was supported by a [James S. McDonnell Foundation (JSMF) Opportunity Award](https://doi.org/10.37717/2022-3711) and a UKRI Future Leaders Fellowship (MR/X032922/1) awarded to HD.
