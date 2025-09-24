@@ -24,7 +24,7 @@ The TinyExplorer FaceDetectionApp is a user-friendly graphical interface designe
 ## Basic Usage
 
 ### Install a Prebuilt Release (recommended)
-- Download the latest installer for your OS from the [Releases page](https://github.com/andreifoldes/tinyexplorer-facedetectionapp/releases).
+- Download the latest installer for your OS from the [Releases page](https://github.com/cardiff-babylab/tinyexplorer-facedetectionapp/releases).
 - Run the installer and launch the app.
 
 ### Build Locally with npm (fallback)

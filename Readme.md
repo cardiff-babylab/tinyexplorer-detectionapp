@@ -75,8 +75,8 @@ If no release exists for your system or the installer doesn't work, you can buil
 - Build a distributable package: `npm run build`
 
 ### See Also (Documentation)
-- Basic Usage: https://andreifoldes.github.io/tinyexplorer-facedetectionapp/#basic-usage
-- Supported File Formats: https://andreifoldes.github.io/tinyexplorer-facedetectionapp/main-features/#supported-file-formats
+- Basic Usage: https://cardiff-babylab.github.io/tinyexplorer-facedetectionapp/getting-started
+- Supported File Formats: https://cardiff-babylab.github.io/tinyexplorer-facedetectionapp/main-features/#supported-file-formats
 
 ## Contact
 
@@ -89,3 +89,7 @@ For more information or collaboration inquiries, please contact:
 - Website: [cardiff-babylab.com](https://www.cardiff-babylab.com/)
 
 We look forward to seeing how this toolbox can support and advance your research in developmental psychology!
+
+## Funding
+
+This work was supported by a James S. McDonnell Foundation (JSMF) Opportunity Award (https://doi.org/10.37717/2022-3711) and a UKRI Future Leaders Fellowship (MR/X032922/1) awarded to HD.

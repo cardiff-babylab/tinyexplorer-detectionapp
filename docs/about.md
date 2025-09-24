@@ -35,7 +35,7 @@ The application combines modern web technologies with machine learning framework
 
 ## License
 
-This project is released under the MIT License. See the [LICENSE](https://github.com/andreifoldes/tinyexplorer-facedetectionapp/blob/master/LICENSE.txt) file for details.
+This project is released under the MIT License. See the [LICENSE](https://github.com/cardiff-babylab/tinyexplorer-facedetectionapp/blob/master/LICENSE.txt) file for details.
 
 ## Acknowledgments
 
@@ -44,6 +44,12 @@ Special thanks to the Cardiff Babylab team and all researchers who provided feed
 ## Contact
 
 For questions about the application or research collaborations, please contact the Cardiff Babylab team.
+
+---
+
+## Funding
+
+This work was supported by a James S. McDonnell Foundation (JSMF) Opportunity Award (https://doi.org/10.37717/2022-3711) and a UKRI Future Leaders Fellowship (MR/X032922/1) awarded to HD.
 
 ---
 
