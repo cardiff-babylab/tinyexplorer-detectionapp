@@ -106,6 +106,22 @@
         ],
         "extraResources": [
             {
+                "from": "pythondist",
+                "to": "pythondist",
+                "filter": [
+                    "**/*",
+                    "!**/__pycache__/**",
+                    "!**/*.pyc",
+                    "!**/*.pyo",
+                    "!**/*.pyd",
+                    "!**/*.whl",
+                    "!**/include/**",
+                    "!**/*.h",
+                    "!**/*.hpp",
+                    "!**/*.hh"
+                ]
+            },
+            {
                 "from": "resources",
                 "to": "resources",
                 "filter": [
