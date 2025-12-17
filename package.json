@@ -133,10 +133,6 @@
             {
                 "from": "graphics/icons/dragon-256.png",
                 "to": "."
-            },
-            {
-                "from": "graphics/icons/dragon-512.png",
-                "to": "."
             }
         ],
         "linux": {
