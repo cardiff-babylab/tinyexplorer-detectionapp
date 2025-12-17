@@ -5,7 +5,7 @@ flask-graphql>=2.0
 ultralytics
 opencv-python
 pillow
-numpy
+numpy<2.0.0
 torch
 torchvision
 dill

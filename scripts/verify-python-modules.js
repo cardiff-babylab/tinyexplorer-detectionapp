@@ -12,9 +12,17 @@ const root = path.join(__dirname, '..');
 const distRoot = path.join(root, 'pythondist');
 
 function venvPython(venvDir) {
-  return process.platform === 'win32'
-    ? path.join(venvDir, 'Scripts', 'python.exe')
-    : path.join(venvDir, 'bin', 'python');
+  if (process.platform === 'win32') {
+    // Check for standalone Python (python.exe at root) first,
+    // then fall back to venv structure (Scripts/python.exe)
+    const standalonePath = path.join(venvDir, 'python.exe');
+    const venvPath = path.join(venvDir, 'Scripts', 'python.exe');
+    if (fs.existsSync(standalonePath)) {
+      return standalonePath;
+    }
+    return venvPath;
+  }
+  return path.join(venvDir, 'bin', 'python');
 }
 
 function checkEnv(name, dir, modules) {
