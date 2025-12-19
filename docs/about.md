@@ -2,7 +2,7 @@
 
 ## About the Project
 
-TinyExplorer Detection App is a desktop application designed for developmental research, providing robust face detection capabilities using state-of-the-art YOLO and RetinaFace models. The app enables researchers to efficiently process large volumes of images and videos, extracting face detection data for analysis.
+The TinyExplorer Detection App is a user-friendly graphical interface designed with developmental scientists in mind. This toolbox integrates state-of-the-art open-source face recognition algorithms into an easy-to-use software package, streamlining the process of analysing facial data.
 
 ## Copyright & Attribution
 
