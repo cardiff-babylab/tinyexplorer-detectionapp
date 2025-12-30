@@ -78,12 +78,13 @@ async function downloadFile(url, destPath) {
 async function downloadWindowsPython() {
     const arch = process.arch;
     let pythonUrl;
-    
+
     // Use python-build-standalone for portable Python with full stdlib
+    // Updated to latest release (20241217) for better Windows compatibility
     if (arch === 'x64') {
-        pythonUrl = 'https://github.com/indygreg/python-build-standalone/releases/download/20230507/cpython-3.10.11+20230507-x86_64-pc-windows-msvc-shared-install_only.tar.gz';
+        pythonUrl = 'https://github.com/astral-sh/python-build-standalone/releases/download/20241217/cpython-3.10.16%2B20241217-x86_64-pc-windows-msvc-install_only.tar.gz';
     } else {
-        pythonUrl = 'https://github.com/indygreg/python-build-standalone/releases/download/20230507/cpython-3.10.11+20230507-i686-pc-windows-msvc-shared-install_only.tar.gz';
+        pythonUrl = 'https://github.com/astral-sh/python-build-standalone/releases/download/20241217/cpython-3.10.16%2B20241217-i686-pc-windows-msvc-install_only.tar.gz';
     }
     
     const pythonDir = path.join(pythonDistDir, 'python-windows');

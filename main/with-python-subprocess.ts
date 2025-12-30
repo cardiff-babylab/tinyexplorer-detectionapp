@@ -270,6 +270,13 @@ const initializePython = async () => {
         : path.join(__dirname, "..");
     const bundledPyDir = path.join(resourcesBase, PY_DIST_FOLDER, "python");
 
+    // For Windows standalone Python, set PYTHONHOME to the Python installation directory
+    // This is critical for Python to find its standard library (encodings module, etc.)
+    const isWindows = process.platform === "win32";
+    const pythonHome = isWindows && __dirname.indexOf("app.asar") > 0
+        ? path.dirname(pythonPath) // For Windows packaged mode, use the directory containing python.exe
+        : ""; // For Unix or dev mode, let Python autodiscover
+
     const spawnEnv = {
         ...process.env,
         // Ensure we don't pick up user's PYTHONPATH or user site-packages
@@ -277,7 +284,7 @@ const initializePython = async () => {
         // Do not set PYTHONPATH to avoid shadowing bundled site-packages
         // Detach from any active virtual environment from the user's shell
         VIRTUAL_ENV: "",
-        PYTHONHOME: "",
+        PYTHONHOME: pythonHome,
         MODEL_TYPE: currentModelType, // Pass current model type to Python
     } as NodeJS.ProcessEnv;
 
